@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Егор Иванов — Fullstack (Vue.js/Node.js) & Flutter-разработчик</title>
+    <meta name="description"
+        content="Fullstack и Flutter-разработчик с опытом создания веб-сервисов, мобильных и десктопных приложений для автоматизации бизнес-процессов.">
+
+    <!-- Tailwind CSS через CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="./templates/js/index.js"></script>
+
+    <!-- Иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Навигация -->
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-blue-600">Егор Иванов</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-blue-600 transition">О себе</a>
+                    <a href="#experience" class="hover:text-blue-600 transition">Опыт</a>
+                    <a href="#skills" class="hover:text-blue-600 transition">Навыки</a>
+                    <a href="#projects" class="hover:text-blue-600 transition">Проекты</a>
+                    <a href="#education" class="hover:text-blue-600 transition">Образование</a>
+                    <a href="#contact" class="hover:text-blue-600 transition">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero секция -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Егор Иванов</h1>
+                <p class="text-2xl md:text-3xl mb-8 text-blue-100">Fullstack (Vue.js / Node.js) & Flutter-разработчик
+                </p>
+                <p class="text-xl mb-10 text-blue-50">
+                    Создаю веб-сервисы, мобильные и десктопные приложения для автоматизации бизнес-процессов.
+                    Придерживаюсь чистой архитектуры и декомпозиции задач.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#contact"
+                        class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+                        <i class="fas fa-envelope mr-2"></i>Связаться
+                    </a>
+                    <a href="https://github.com/Eargosha" target="_blank"
+                        class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                    <a href="https://career.habr.com/eargosha" target="_blank"
+                        class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                        <i class="fas fa-briefcase mr-2"></i>Habr Career
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О себе -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-8 text-center">О себе и подходе к работе</h2>
+                <div class="bg-white rounded-lg shadow-lg p-8 space-y-4">
+                    <p class="text-lg leading-relaxed">
+                        Разработчик с опытом создания коммерческих и внутренних продуктов. Специализируюсь на
+                        автоматизации
+                        бизнес-процессов и построении клиент-серверной архитектуры.
+                        Имею опыт как во Flutter-разработке (Android/Windows), так и в Fullstack веб-разработке (Vue.js
+                        + Node.js).
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        <strong>Подход к разработке:</strong> Решаю задачи через декомпозицию - разбиваю большие
+                        проблемы на мелкие подзадачи.
+                        Стараюсь следовать принципам SOLID, KISS, DRY и YAGNI, находя баланс между простотой реализации
+                        и качеством архитектуры.
+                        Использую ООП и паттерны проектирования.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        <strong>Работа с ИИ:</strong> Регулярно использую ИИ-инструменты (Qwen, ChatGPT, Copilot) как
+                        ассистентов
+                        для рефакторинга, поиска решений по API и ускорения рутины. Всегда проверяю и адаптирую
+                        сгенерированный код
+                        перед внедрением в проект.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        <strong>DevOps и Деплой:</strong> Имею опыт настройки серверов, ручного деплоя и автоматизации.
+                        Писал собственные утилиты для управления процессами PM2, Nginx и обновлениями с GitHub.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Опыт работы -->
+    <section id="experience" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center">Профессиональный опыт</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+
+                <!-- Опыт 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-blue-600">Специалист 1 разряда отдела информатизации</h3>
+                            <p class="text-xl text-gray-700">Четвертый арбитражный апелляционный суд (4ААС)</p>
+                        </div>
+                        <span class="text-gray-500 font-semibold">Янв 2025 — Настоящее время</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Flutter (Android/Windows):</strong> Разработал с нуля приложение для учёта
+                                инвентаря.
+                                Реализовал интеграцию с RFID-принтером SATO (ZPL), сканирование ШК, ролевую модель и
+                                экспорт в Excel.
+                                Внедрил Push-уведомления и email-рассылки, исключив ручную координацию между
+                                отделами.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span><strong>C# / WPF (.NET):</strong> Создал приложение-виджет для работы с телефонным
+                                справочником
+                                суда (MVVM). Приложение считывает данные из Excel и предоставляет быстрый поиск и
+                                избранное.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Java / Spring Boot:</strong> Поддерживал и масштабировал веб-портал суда.
+                                Интегрировал модули «Резонансные дела», «Серийные дела» и обновил раздел ВКС.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Инфраструктура:</strong> Обслуживание парка ПК, сетевого оборудования,
+                                телефонии,
+                                установка корпоративного ПО и техподдержка пользователей.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Опыт 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-blue-600">Стажер Flutter-разработчик</h3>
+                            <p class="text-xl text-gray-700">«Дышите свободно» (Минск, Беларусь)</p>
+                        </div>
+                        <span class="text-gray-500 font-semibold">Мар 2025 — Июн 2025</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Разработал тест курильщика (12 вопросов) с динамической генерацией последующих
+                                вопросов
+                                на основе предыдущих ответов пользователя.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Обеспечил реактивное отображение виджета статуса зависимости от курения с
+                                использованием BLoC.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Навыки -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center">Навыки и технологии</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600">
+                        <i class="fas fa-code mr-2"></i>Языки программирования
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Dart</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Java</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">C#</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">SQL</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-purple-600">
+                        <i class="fas fa-mobile-alt mr-2"></i>Frontend & Mobile
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Flutter</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Vue.js (v2)</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">WPF (.NET)</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">AutoRoute</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-red-600">
+                        <i class="fas fa-server mr-2"></i>Backend & Базы данных
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Node.js (Express)</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Spring Boot</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">REST API</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">WebSocket</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-green-600">
+                        <i class="fas fa-cubes mr-2"></i>Архитектура и паттерны
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">BLoC / Cubit</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">MVVM</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Vuex</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">ООП</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">SOLID / KISS /
+                            DRY</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-yellow-600">
+                        <i class="fas fa-tools mr-2"></i>DevOps & Инструменты
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Git</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Nginx</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">PM2</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">CLI / Terminal</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Inno Setup</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">AI Tools</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-4 text-indigo-600">
+                        <i class="fas fa-plug mr-2"></i>Интеграции и API
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">RFID / ZPL</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Barcode
+                            Scanner</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">SMTP /
+                            Nodemailer</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">JWT Auth</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">QR Generation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center">Ключевые проекты</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Проект 1: Eventron -->
+                <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-2">Eventron</h3>
+                    <p class="text-sm text-gray-500 mb-4">Fullstack Web-сервис для ЧГМА</p>
+                    <p class="text-gray-700 mb-4 flex-grow">
+                        Система автоматизации полного цикла проведения мероприятий: от публикации и регистрации до
+                        проверки участия по QR-кодам. Интеграция с информационной системой ВУЗа (ИСМА),
+                        WebSocket для live-уведомлений, генерация отчетов и email-рассылки.
+                        Проект внедряется в Читинской государственной медицинской академии.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Vue.js v2</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">WebSocket</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Nginx / PM2</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://eventron.chitgma.ru" target="_blank"
+                            class="inline-block text-blue-600 hover:text-blue-800 font-semibold">
+                            <i class="fas fa-external-link-alt mr-2"></i>Сайт проекта
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Проект 2: Инвентаризация -->
+                <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-2">Инвентаризация 4ААС</h3>
+                    <p class="text-sm text-gray-500 mb-4">Cross-platform (Android / Windows)</p>
+                    <p class="text-gray-700 mb-4 flex-grow">
+                        Кроссплатформенное приложение для учёта инвентаря суда.
+                        Прямая интеграция с RFID-принтером SATO (печать по ZPL), сканирование ШК,
+                        ролевая модель доступа. Автоматические Push-уведомления и email-отчеты
+                        полностью заменили ручную координацию между отделами.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Flutter</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Dart</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">BLoC</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">RFID / ZPL</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/Eargosha/Inventerization4AAS" target="_blank"
+                            class="inline-block text-blue-600 hover:text-blue-800 font-semibold">
+                            <i class="fab fa-github mr-2"></i>Исходный код
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Образование -->
+    <section id="education" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center">Образование</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-blue-600">Забайкальский государственный университет</h3>
+                            <p class="text-xl text-gray-700">Бакалавриат: Информатика и вычислительная техника (ИВТ)</p>
+                        </div>
+                        <span class="text-gray-500 font-semibold">2022 — 2026</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-award text-yellow-500 mt-1 mr-3"></i>
+                            <span>Красный диплом (средний балл: 5.0)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-trophy text-yellow-500 mt-1 mr-3"></i>
+                            <span>Участие в профильных конференциях и хакатонах с призовыми местами (1-3)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center">Контакты</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Контактная информация -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6">Свяжитесь со мной</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-2xl mr-4"></i>
+                            <div>
+                                <p class="text-sm text-blue-100">Местоположение</p>
+                                <p class="text-xl">Чита, Россия</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-2xl mr-4"></i>
+                            <div>
+                                <p class="text-sm text-blue-100">Телефон</p>
+                                <a href="tel:+79141446489" class="text-xl hover:text-blue-200 transition">+7 914
+                                    144-64-89</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-2xl mr-4"></i>
+                            <div>
+                                <p class="text-sm text-blue-100">Email</p>
+                                <a href="mailto:eargosha@mail.ru"
+                                    class="text-xl hover:text-blue-200 transition">eargosha@mail.ru</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-briefcase text-2xl mr-4"></i>
+                            <div>
+                                <p class="text-sm text-blue-100">Habr Career</p>
+                                <a href="https://career.habr.com/eargosha" target="_blank"
+                                    class="text-xl hover:text-blue-200 transition">career.habr.com/eargosha</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Форма обратной связи -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6">Напишите мне</h3>
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold mb-2">Имя *</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-white"
+                                placeholder="Ваше имя">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold mb-2">Email *</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-white"
+                                placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold mb-2">Телефон</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-2 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-white"
+                                placeholder="+7 999 123-45-67">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold mb-2">Сообщение *</label>
+                            <textarea id="message" name="message" required rows="4"
+                                class="w-full px-4 py-2 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-100 focus:outline-none focus:ring-2 focus:ring-white resize-none"
+                                placeholder="Ваше сообщение..."></textarea>
+                        </div>
+
+                        <!-- Чекбокс согласия на обработку персональных данных -->
+                        <div class="flex items-start">
+                            <input type="checkbox" id="privacyConsent" name="privacyConsent" required
+                                class="mt-1 w-4 h-4 text-blue-600 bg-white/20 border-white/30 rounded focus:ring-2 focus:ring-white cursor-pointer">
+                            <label for="privacyConsent" class="ml-2 text-sm text-blue-50 cursor-pointer">
+                                Я согласен на обработку моих персональных данных
+                            </label>
+                        </div>
+
+                        <button type="submit" id="submitBtn"
+                            class="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition disabled:opacity-50 disabled:cursor-not-allowed">
+                            <span id="btnText">Отправить</span>
+                            <span id="btnLoader" class="hidden">
+                                <i class="fas fa-spinner fa-spin mr-2"></i>Отправка...
+                            </span>
+                        </button>
+                        <div id="formMessage" class="hidden mt-4 p-4 rounded-lg"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Иванов Егор Николаевич. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+
+</html>
