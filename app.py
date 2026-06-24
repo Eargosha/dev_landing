@@ -81,7 +81,30 @@ def create_app(config_override=None):
     db.init_app(app)
     migrate.init_app(app, db)
     mail.init_app(app)
-    cors.init_app(app, resources={r"/api/*": {"origins": "*"}})
+    # Забыл корс настроить, вот дополняю, для примера пусть будет vue cli на webpack в локальной разработке
+    allowed_origins = [
+        "http://localhost:8080",   # Стандартный порт Vue CLI (webpack)
+        "http://127.0.0.1:8080",
+    ]
+
+    cors.init_app(
+        app, 
+        resources={
+            r"/api/*": {
+                "origins": allowed_origins,
+                "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+                "allow_headers": [
+                    "Content-Type",  # разрешаем post pur
+                    # "Authorization",   jwt токены, но пока их нет
+                    "X-Requested-With", # Ajax axios
+                    "Accept", 
+                    "Origin"
+                ],
+                # "supports_credentials": True, # Обязательно True для кук и заголовка Authorization, но тут их нет
+                "max_age": 600 # Кэшировать preflight (OPTIONS) запросы на 10 минут
+            }
+        }
+    )
     
     # Создаём директории
     os.makedirs(app.config.get("DATA_DIR", "data"), exist_ok=True)
